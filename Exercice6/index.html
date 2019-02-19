@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+    <title>Exercice 6</title>
+  </head>
+  <body ng-app>
+    <button ng-click="text = false" type="button">Senna</button>  <!-- Au clic on vérifie que text = false -->
+    <button ng-click="text = true" type="button">Prost</button>  <!-- Au clic on vérifie que text = true -->
+    <p ng-hide="text">  <!-- Si hide = false le texte s'affiche et si hide = true le texte disparait -->
+      Ayrton Senna da Silva est un pilote automobile brésilien, né le 21 mars 1960 à São Paulo et mort le 1er mai 1994 à Bologne, à la suite d'un accident lors du Grand Prix de Saint-Marin.
+    </p>
+    <p ng-show="text">  <!-- Si show = false le texte disparait et si show = true le texte apparait -->
+      Alain Prost, né le 24 février 1955 à Lorette dans la Loire, est un pilote automobile français. Quadruple champion du monde des pilotes de Formule 1 en 1985, 1986, 1989 et 1993, victorieux de 51 Grands Prix de Formule 1 pour 199 départs entre 1980 et 1993, celui que l'on surnomme « Le Professeur » est considéré comme l'un des plus grands pilotes de l'histoire de son sport. Sa rivalité au sommet avec Ayrton Senna fait partie des grandes heures de la Formule 1 au tournant des années 1980 et 1990.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="App" lang="fr" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exercice 2</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+<body ng-controller="voituresCtrl">
+      <!-- afficher la liste des voitures et leur couleur du fichier voiture.json. -->
+    <table cellspacing="2px" cellpadding="2px;" rules="all" style="border:solid 1px black;">
+      <thead>
+        <th>Marque</th>
+        <th>Couleur</th>
+      </thead>
+      <tr ng-repeat="voiture in voitures">
+        <td>
+          {{ voiture.marque}}
+        </td>
+        <td>
+          {{ voiture.couleur}}
+        </td>
+      </tr>
+    </table>
+</body>
+</html>
